@@ -2,20 +2,17 @@
 
 Command:
 
-```bash
 python manage.py test
-```
 
 Output:
 
-```text
 Found 9 test(s).
-System check identified no issues (0 silenpythonced).
 Creating test database for alias 'default'...
+System check identified no issues (0 silenced).
 .........
 ----------------------------------------------------------------------
-Ran 9 tests in 0.085s
+Ran 9 tests in 0.164s
 
 OK
+
 Destroying test database for alias 'default'...
-```
