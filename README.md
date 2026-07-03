@@ -81,7 +81,11 @@ Run migrations:
 python manage.py migrate
 ```
 
-By default, the SQLite database is stored in the system temp folder. This avoids SQLite file-locking issues when the project is inside OneDrive. To choose your own database path, set `SQLITE_DB_PATH` before running migrations.
+Run migrations:
+
+python manage.py migrate
+
+This creates the SQLite database (db.sqlite3) in the project root directory.
 
 Create an admin user:
 
@@ -124,11 +128,11 @@ Example product request:
 
 ```json
 {
-  "name": "Coffee Mug",
-  "length": "10.00",
-  "width": "8.00",
-  "height": "8.00",
-  "weight": "0.50"
+  "name": "Laptop",
+  "length": "30",
+  "width": "20",
+  "height": "5",
+  "weight": "2"
 }
 ```
 
@@ -172,7 +176,7 @@ Example order request:
 
 ```json
 {
-  "customer_name": "John Doe",
+  "customer_name": "Mangesh",
   "items": [
     {
       "product": 1,
@@ -232,8 +236,4 @@ Example error response:
 python manage.py test
 ```
 
-## Assignment Notes
 
-Before final submission, add your real exported chat transcript to the repository. Do not generate the transcript using AI.
-
-Also add your own answer for what you learned in this assignment. Do not generate that answer using AI.
